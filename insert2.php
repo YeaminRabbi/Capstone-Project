@@ -1,6 +1,6 @@
 <?php 
  
-  
+  error_reporting(0);
   require 'db_config.php';
   $course_list = fetch_all_data_usingPDO($pdo, 'select * from course_table');
   
@@ -45,23 +45,26 @@
 	<div class="container mt-5">
 		<form action="action.php" method="POST">
 			
+             <div class="form-group">
+                <label>Course Name:</label>
+                <select class="form-control" name="course_code">
+                        <?php 
+                          foreach ($course_list as $key => $data) {
+                        ?>
+                        
+                        <option><?= $data['course_name'] ?></option>
 
+                        <option value="<?= $data['course_code']; ?>"><?= $data['course_name'] ?></option>
 
-        <div class="form-group">
-		    <label>Course Name:</label>
-		    <select class="form-control" name="course_code">
-                <?php 
-                  foreach ($course_list as $key => $data) {
-                ?>
-                <option value="<?= $data['course_name'] ?>"><?= $data['course_name'] ?></option>
+                        <?php 
+                          }
+                        ?>
+                        
+                        
+                      </select>
+                </div>
 
-                <?php 
-                  }
-                ?>
-                
-                
-              </select>
-		    </div>
+       
 
         <div class="form-group">
 		    <label>Trimester:</label>

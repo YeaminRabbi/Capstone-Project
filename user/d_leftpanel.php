@@ -13,17 +13,25 @@
           </div><!-- menu-item -->
         </a><!-- sl-menu-link -->
 
-         <a href="product.php?product_master_category=SOFTWARE" class="sl-menu-link">
+         <a href="course_list.php" class="sl-menu-link">
           <div class="sl-menu-item">
             <i class="menu-item-icon ion-ios-pie-outline tx-20"></i>
-            <span class="menu-item-label">Courses</span>
+            <span class="menu-item-label">All Course List</span>
           </div><!-- menu-item -->
         </a><!-- sl-menu-link -->
 
-        <a href="product.php?product_master_category=HARDWARE" class="sl-menu-link">
+        <a href="course_complete.php" class="sl-menu-link">
           <div class="sl-menu-item">
             <i class="menu-item-icon ion-ios-pie-outline tx-20"></i>
-            <span class="menu-item-label">Predictive Function</span>
+            <span class="menu-item-label">Result History</span>
+          </div><!-- menu-item -->
+        </a><!-- sl-menu-link -->
+
+
+        <a href="predictive_course.php" class="sl-menu-link">
+          <div class="sl-menu-item">
+            <i class="menu-item-icon ion-ios-pie-outline tx-20"></i>
+            <span class="menu-item-label">Predictive Course List</span>
           </div><!-- menu-item -->
 
         </a><!-- sl-menu-link -->

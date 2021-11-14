@@ -1,13 +1,6 @@
 <?php 
  
- //SELECT COUNT(*), course_table.course_group FROM `course_result` join course_table on course_result.course_code = course_table.course_code where course_result.student_id = '11171212' GROUP By course_table.course_group
-
-//SELECT course_result.trimester,course_result.gpa, course_table.course_group ,course_table.course_name FROM `course_result` join course_table on course_result.course_code = course_table.course_code where course_result.student_id = '11171212' order by course_result.trimester
-
-
-
-
- include 'db_config.php';
+ include '../db_config.php';
 
  $studentID = '11171212';
 

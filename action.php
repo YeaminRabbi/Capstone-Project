@@ -31,6 +31,7 @@
 			$_SESSION['user_name']=$row['name'];
 
 			header("Location: user/index.php");
+			
 
 	     }
 	     else{
