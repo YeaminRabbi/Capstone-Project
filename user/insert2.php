@@ -1,6 +1,7 @@
 <?php 
  
-    require 'db_config.php';
+ 
+  require 'db_config.php';
   $course_list = fetch_all_data_usingPDO($pdo, 'select * from course_table');
   
 

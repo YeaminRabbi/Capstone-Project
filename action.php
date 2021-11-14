@@ -98,6 +98,12 @@
 
 		}
 
+
+		if(isset($_POST['btn-insertStudent']))
+		{
+			
+		}
+
 	 function fetch_all_data_usingDB($db,$sql){
 			
 			$result = mysqli_query($db,$sql);
