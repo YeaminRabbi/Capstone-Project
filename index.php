@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     
-    <title>User Login</title>
+    <title>Student Login</title>
     
     <!--Fabicon Image-->
     <link rel="shortcut icon"  href="../f-black.png">
@@ -29,7 +29,7 @@
 
         <form action="action.php" method="POST">
         	<div class="form-group">
-	          <input type="text" class="form-control" name="email" placeholder="Enter your ID">
+	          <input type="text" class="form-control" name="id" placeholder="Enter your ID">
 	        </div><!-- form-group -->
 	        <div class="form-group">
 	          <input type="password" class="form-control" name="password" placeholder="Enter your password">
@@ -46,7 +46,7 @@
             {
           ?>
 
-           <p style="color: green;font-weight: 700;">Login with Valid Credentials!</p>
+           <p style="color: red;font-weight: 700;">Login with Valid Credentials!</p>
           <?php 
             }
           ?>
@@ -54,19 +54,6 @@
 
           
 
-
-          <?php
-
-            if(isset($_GET['chmsg']))
-            {
-          ?>
-
-           <p style="color: green;font-weight: 700;">Password Updated! </p>
-          <?php 
-            }
-          ?>
-
-          
 
 
 

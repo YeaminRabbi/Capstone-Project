@@ -15,13 +15,13 @@
               <!-- for mobile view only first name class="hidden-md-down" -->
               <span class="logged-name"><?php
                     
-                    echo 'Yeamin Rabbi Bin Akram';
+                    echo $_SESSION['user_name'];
                ?></span></span>
               <img src="img/img3.jpg" class="wd-32 rounded-circle" alt="">
             </a>
             <div class="dropdown-menu dropdown-menu-header wd-200">
               <ul class="list-unstyled user-profile-nav">
-                <li><a href="profile.php">&nbsp<i class="fa fa-user" aria-hidden="true"></i>&nbsp&nbsp&nbsp&nbsp&nbsp Edit Profile</a></li>
+               
               
                 <li><a href="logout.php"><i class="icon ion-power"></i> Log Out</a></li>
               </ul>
