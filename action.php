@@ -101,7 +101,25 @@
 
 		if(isset($_POST['btn-insertStudent']))
 		{
+			$student_id = $_POST['student_id'];
+			$name = $_POST['name'];
+
+			$email =$_POST['email'];
+			$contact = $_POST['contact'];
+			$password = md5($_POST['password']);
+			$address = $_POST['address'];
+			$father_name = $_POST['father_name'];
+			$mother_name = $_POST['mother_name'];
 			
+			$sql = "INSERT INTO students (student_id,name,email,contact,address,password,father_name,mother_name) VALUES ('$student_id','$name','$email','$contact','$address','$password','$father_name','$mother_name')";
+
+			if ($db->query($sql) === TRUE) {
+			  header('Location: student.php?msg=inserted');
+			 
+			} else {
+			  echo "Error: " . $sql . "<br>" . $db->error;
+			}
+
 		}
 
 	 function fetch_all_data_usingDB($db,$sql){

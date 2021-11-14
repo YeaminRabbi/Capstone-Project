@@ -1,7 +1,7 @@
 <?php 
  
  
-  require 'db_config.php';
+  require '../db_config.php';
   $course_list = fetch_all_data_usingPDO($pdo, 'select * from course_table');
   
 
@@ -52,7 +52,7 @@
                           foreach ($course_list as $key => $data) {
                         ?>
                         
-                        <option><?= $data['course_name'] ?></option>
+                      
 
                         <option value="<?= $data['course_code']; ?>"><?= $data['course_name'] ?></option>
 
