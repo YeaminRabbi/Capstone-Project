@@ -27,7 +27,7 @@
 
 			session_start();
 			$_SESSION['user']="VERIFIED";
-			$_SESSION['user_id']=$row['id'];
+			$_SESSION['user_id']=$row['student_id'];
 			$_SESSION['user_name']=$row['name'];
 
 			header("Location: user/index.php");
